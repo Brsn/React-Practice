@@ -7,9 +7,12 @@ import Nav from './components/Nav.js';
 class App extends React.Component {
   render() {
     const myName = "Bronson";
+    const site = {
+      url: 'https://reactjs.org/docs/react-api.html#createelement'
+    }
     return (
       <div>
-        <Home name={myName} />
+        <Home name={myName} mySite={site} />
         {/* here we define props.name in Nav.js --> */}
         <Nav name="Bronson" />
       </div>
